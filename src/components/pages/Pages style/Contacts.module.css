@@ -45,8 +45,17 @@
     margin-left: 3em;
 }
 
-.itemNav:hover  {
+.escondido {
+    opacity:0%
+}
+.itemNav:hover {
     transform: rotateY(360deg);
+    transition: 2s;
+}
+
+.itemNav:hover + .escondido {
+    opacity: 100%;
+    transform: rotate();
     transition: 2s;
 }
 
