@@ -14,7 +14,7 @@ function Contacts () {
 
             <nav className={styles.itensNav}>
                 <ul className={styles.listNav}>
-                   <li className={styles.itemNav}> <img src={coin} alt="Email"/> </li> 
+                   <li className={styles.itemNav}> <img src={coin} alt="Email" /> </li> 
                    <li className={styles.escondido}><LinkButton to="adoniasfalcao036@gmail.com" text="Email"/></li>
                     <li className={styles.itemNav}><img src={coin} alt="Linkedin"/> </li>
                    <li className={styles.escondido}><LinkButton to="https://linkedin.com/in/adonias-falcão010530/" text="Linkedin"/></li>

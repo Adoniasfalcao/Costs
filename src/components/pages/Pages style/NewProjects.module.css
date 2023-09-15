@@ -1,0 +1,21 @@
+.new_project_container {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.new_project_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.contacts_container p {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+    max-width: 450px;
+    font-size: 1.5em;
+    text-align: justify;
+}

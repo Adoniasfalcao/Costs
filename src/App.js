@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import Contacts from './components/pages/Contacts';
 import Company from './components/pages/Company';
 import Projects from './components/pages/Projects';
+import NewProject from './components/pages/NewProject';
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
@@ -22,7 +23,7 @@ function App() {
               <Route path="/projects" element={<Projects/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
               <Route path="/company" element={<Company/>}/> 
-              <Route path="/email" ></Route>         
+              <Route path="/new-project" element={<NewProject/>} ></Route>         
           </Routes>
         </Container>
         
