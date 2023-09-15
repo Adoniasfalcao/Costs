@@ -21,7 +21,8 @@ function App() {
               <Route exact path="/" element={<Home/>}/>
               <Route path="/projects" element={<Projects/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
-              <Route path="/company" element={<Company/>}/>          
+              <Route path="/company" element={<Company/>}/> 
+              <Route path="/email" ></Route>         
           </Routes>
         </Container>
         

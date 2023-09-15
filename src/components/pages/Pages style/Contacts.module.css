@@ -1,0 +1,57 @@
+.contacts_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.contacts_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.contacts_container p {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+    max-width: 450px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.contacts_container p span {
+    color: #ffbb33;
+}
+
+.contacts_container svg {
+    font-size: 3em;
+}
+
+.itensNav {
+    color: #fff;
+    margin-right: 1em;
+    margin-top: 7em;
+}
+
+.listNav {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+}
+
+.itemNav {
+    margin-right: 1em;
+    margin-left: 3em;
+}
+
+.itemNav:hover {
+    transform: rotateX(180deg);
+    transition: 1.5s;
+
+}
+
+.escondido {
+    opacity: 70%;
+}
+

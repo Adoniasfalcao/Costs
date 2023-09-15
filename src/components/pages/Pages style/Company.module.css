@@ -1,0 +1,30 @@
+.company_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+}
+
+.company_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.company_container p {
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+    max-width: 450px; 
+    font-size: 1.5em;
+    text-align:justify;
+}
+
+.company_container p span {
+    color: #ffbb33;
+    padding: 0.1em;
+}
+
+.company_container img {
+    width:60px;
+    margin: 0.5em 0 2em;
+}
