@@ -29,7 +29,13 @@ function ProjectForm ( {btnText,handleSubmit,projectData} ) {
 
     function handleChange(event) {
         setProject( {...project, [event.target.name]: event.target.value} )
-        console.log(project)
+    }
+
+    function handleCategory(event) {
+        setProject( {...project, category: {
+            id: event.target.value,
+            name: event.target.options[event.target.selectedIndex]
+        }} )
     }
 
     return(
