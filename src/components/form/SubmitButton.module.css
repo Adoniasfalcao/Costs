@@ -1,20 +1,20 @@
-.SubmitButton_control {
-    display:flex;
-    flex-direction: column;
-    margin-top: 2em;
-    margin-bottom: 1em;
+.SubmitButton {
+    background-color: #222;
     border-radius: 3em;
-}
-
-.SubmitButton_control button {
-    padding: .7em;
-    border-radius: 3em;
-    border: none;
     font-weight: bold;
-    background-color: #7b7b7b42;
-}
+    color: #fff;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .SubmitButton:hover {
+    background-color: #139e01;
+  }
 
-.SubmitButton_control:hover {
-    background-color: #1efd00;
-    transition: 1s;
-}
+
+/* 
+transition: 1s;*/
+
