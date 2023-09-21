@@ -12,15 +12,26 @@
       "id": 1
     },
     {
-      "category": {
-        "id": "3",
-        "name": "Planejamento"
-      },
-      "project_name": "Projeto 2",
+      "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "project_name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
