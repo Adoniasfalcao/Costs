@@ -13,7 +13,7 @@ function ProjectCards ({ id,name,budget,category,handleRemove }) {
     return (
         <div className={styles.project_card}>
 
-            <h4>{name}</h4>
+            <h4>{name.length >= 15 ? name.substring(0, 10) + '...': name}</h4>
 
             <p> <span>Orçamento: </span> R${budget} </p>
 

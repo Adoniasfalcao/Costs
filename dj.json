@@ -1,8 +1,8 @@
 {
   "projects": [
     {
-      "project_name": "Meu projeto super hiper",
-      "project_budget": "$1.567,89",
+      "project_name": "ieurghdnzmdhfgnd",
+      "project_budget": "$1.242,42",
       "category": {
         "id": "2",
         "name": "Infraestrutura"
@@ -10,6 +10,17 @@
       "cost": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "project_name": "meu nome é fodase",
+      "project_budget": "$1.242,42",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
