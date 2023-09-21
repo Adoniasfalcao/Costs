@@ -51,8 +51,15 @@ function Projects () {
             )}
 
             <Container customClass="start">
+
                 { projects.length > 0 && 
-                    projects.map((project) => (<ProjectCards name={project.name}/>))}
+                    projects.map((project) => (<ProjectCards name={project.project_name}
+                        key={project.id}
+                        id={project.id}
+                        budget={project.project_budget}
+                        category={project.category.name} />) 
+                )}
+                    
             </Container>
 
         </div>  
