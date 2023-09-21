@@ -80,7 +80,7 @@ function Projects () {
 
             <Container customClass="start">
 
-                            {projects.length > 0 &&
+                {projects.length > 0 &&
                 projects.map((project) => (
                     <ProjectCards
                     name={

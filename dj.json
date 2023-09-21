@@ -1,62 +1,15 @@
 {
   "projects": [
     {
-      "project_name": "Projeto 1",
-      "project_budget": "$1.000,00",
+      "project_name": "Meu projeto super hiper",
+      "project_budget": "$1.567,89",
       "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
+        "id": "2",
+        "name": "Infraestrutura"
       },
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "project_name": "Projeto 1",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-<<<<<<< HEAD
-      "project_name": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "project_budget": "$1.000,00",
-=======
-      "project_name": "Teste 3",
-      "project_budget": "$1.567,89",
-      "category": {
-        "id": "4",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-<<<<<<< HEAD
-      "project_name": "Meu projeto super hiper mega blaster gigantesco",
-      "project_budget": "$1.445,46",
-=======
-      "project_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "project_budget": "$1.567,89",
->>>>>>> b31e221ad0667264667203084553ef4c467150a5
->>>>>>> dab66645480216e891631bc8c4aa90a4167b44ed
-      "category": {
-        "id": "3",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-<<<<<<< HEAD
-      "id": 3
-=======
-      "id": 4
->>>>>>> b31e221ad0667264667203084553ef4c467150a5
     }
   ],
   "categories": [
