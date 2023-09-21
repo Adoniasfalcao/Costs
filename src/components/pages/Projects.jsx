@@ -80,15 +80,22 @@ function Projects () {
 
             <Container customClass="start">
 
-                { projects.length > 0 && 
-                    projects.map((project) => (<ProjectCards name={project.project_name}
-                        key={project.id}
-                        id={project.id}
-                        budget={project.project_budget}
-                        category={project.category.name}
-                        handleRemove={removeProject}
-                        />) 
-                )}
+                            {projects.length > 0 &&
+                projects.map((project) => (
+                    <ProjectCards
+                    name={
+                        project.project_name.length > 30
+                        ? project.project_name.substring(0, 20) + '...'
+                        : project.project_name
+                    }
+                    key={project.id}
+                    id={project.id}
+                    budget={project.project_budget}
+                    category={project.category.name}
+                    handleRemove={removeProject}
+                    />
+                ))
+                }
                 {!removeLoading && <Loading/>}
                 {removeLoading && projects.length === 0 && (
                     <h3>Não há projetos criados</h3>
