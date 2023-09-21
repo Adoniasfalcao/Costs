@@ -18,6 +18,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
       .then((resp) => resp.json())
       .then((data) => {
         setCategories(data);
+        console.log(data)
       })
       .catch((err) => console.log(err));
   }, []);
@@ -31,10 +32,10 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   const formatCurrency = (value) => {
     // Remova todos os caracteres não numéricos
     const numericValue = value.replace(/\D/g, '');
-    const newNumericValue = numericValue.replace(/^(\S)(\S)(\S)(\S)(\S)(\S)/g, '$1.$2$3$4,$5$6')
+    const newNumericValue = numericValue.replace(/^(\S)(\S)(\S)(\S)(\S)(\S)/g, '$$1.$2$3$4,$5$6')
     
     // Verifique se o valor não está vazio
-    if (numericValue === '') {
+    if (numericValue === '') {4
       return '';
     }
   
@@ -81,7 +82,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         text="Orçamento"
         handleOnChange={handleChange}
         value={project.project_budget}
-       
+      
       
       />
       <Select
