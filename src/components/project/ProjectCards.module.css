@@ -98,8 +98,8 @@
     margin-right: .5rem;
 }
 
-@media screen and (max-width: 100%) {
+@media screen and (max-width: 768px) {
     .project_card{
-        width: 44%;
+        width: 60%;
     }
 }
