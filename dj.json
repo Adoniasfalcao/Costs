@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "project_name": "Odisseia",
+      "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -10,17 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "project_name": "Estágio",
-      "project_budget": "$1.543,00",
-      "category": {
-        "id": "3",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [

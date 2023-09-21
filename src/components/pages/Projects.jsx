@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom"
 import { useState,useEffect } from "react"
+import Loading from "../layout/Loading"
 import Message from "../layout/Message"
 import Container from "../layout/Container"
 import LinkButton from "../layout/LinkButton"
@@ -10,6 +11,8 @@ import styles from "./Pages style/Projects.module.css"
 function Projects () {
     
     const [projects,setProjects] = useState([])
+    const [removeLoading,setRemoveLoading] = useState(false)
+    const [projectMessage,setProjectMessage] = useState('')
 
     const location = useLocation()
     let message = ''
@@ -20,8 +23,10 @@ function Projects () {
     } 
 
     useEffect( () => {
+        //Loading timer
+        setTimeout(() => {
 
-        fetch('http://localhost:5000/projects',{
+            fetch('http://localhost:5000/projects',{
             
             method: 'GET',
             headers: {
@@ -33,10 +38,32 @@ function Projects () {
         ).then( data => {
             console.log(data)
             setProjects(data)
+            setRemoveLoading(true)
         })
         .catch( err => console.log(err))
 
+        },500)
+
     },[])
+
+
+    function removeProject (id) {
+
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+
+        })
+        .then( (resp) => resp.json)
+        .then( () => {
+            setProjects(projects.filter( (project) => project.id !== id))
+            setProjectMessage('Projeto removido com sucesso!')
+        })
+        .catch( (err) => console.log(err))
+    }
+
 
     return(
         <div className={styles.project_container}>
@@ -49,6 +76,7 @@ function Projects () {
             {message && (
                 <Message message={message} type="sucess"/>
             )}
+            {projectMessage && (<Message message={projectMessage} type="sucess"/>)}
 
             <Container customClass="start">
 
@@ -57,7 +85,13 @@ function Projects () {
                         key={project.id}
                         id={project.id}
                         budget={project.project_budget}
-                        category={project.category.name} />) 
+                        category={project.category.name}
+                        handleRemove={removeProject}
+                        />) 
+                )}
+                {!removeLoading && <Loading/>}
+                {removeLoading && projects.length === 0 && (
+                    <h3>Não há projetos criados</h3>
                 )}
                     
             </Container>
