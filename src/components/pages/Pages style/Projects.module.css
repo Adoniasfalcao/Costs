@@ -7,3 +7,15 @@
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    .project_container {
+        width: 360px;
+    }
+
+    .project_container h1 {
+        font-size: 2em;
+    }
+
+}
