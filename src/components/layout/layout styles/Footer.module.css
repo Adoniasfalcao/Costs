@@ -4,6 +4,7 @@
     color: #FFF;
     padding: 1.5em;
     text-align: center;
+    margin-top: 88px;
 }
 
 .socialList {
@@ -34,7 +35,8 @@
 /* Estilos para telas menores, por exemplo, abaixo de 768px */
 @media screen and (max-width: 768px) {
     .footer {
-        padding: 1em; /* Reduzir o padding para economizar espaço em telas menores */
+        padding: 1em;
+         /* Reduzir o padding para economizar espaço em telas menores */
     }
 
     .socialList li {
