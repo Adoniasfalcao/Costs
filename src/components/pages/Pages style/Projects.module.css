@@ -8,7 +8,6 @@
     margin-bottom: 2rem;
 }
 
-
 @media screen and (max-width: 768px) {
     .project_container {
         width: 360px;
