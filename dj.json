@@ -1,26 +1,7 @@
 {
   "projects": [
-<<<<<<< HEAD
     {
       "project_name": "Projeto 1",
-      "project_budget": "$1.000,00",
-=======
-<<<<<<< HEAD
-    {
-      "project_name": "ieurghdnzmdhfgnd",
-      "project_budget": "$1.242,42",
->>>>>>> 5ef1a48932f8f1e2c1cf51ea14e706f82d37ec26
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": [],
-<<<<<<< HEAD
-      "id": 2
-    },
-    {
-      "project_name": "Projeto 2",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -28,7 +9,7 @@
       },
       "cost": 0,
       "services": [],
-      "id": 3
+      "id": 1
     },
     {
       "project_name": "Projeto 3",
@@ -39,10 +20,32 @@
       },
       "cost": 0,
       "services": [],
+      "id": 2
+    },
+    {
+      "project_name": "Projeto 3",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "3",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "project_name": "Projeto 3",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
       "id": 4
     },
     {
-      "project_name": "Projeto 4",
+      "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -53,7 +56,7 @@
       "id": 5
     },
     {
-      "project_name": "Projeto 5",
+      "project_name": "Projeto 2",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -62,25 +65,29 @@
       "cost": 0,
       "services": [],
       "id": 6
-    }
-=======
-      "id": 1
     },
     {
-      "project_name": "meu nome é fodase",
-      "project_budget": "$1.242,42",
+      "project_name": "Projeto 3",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "3",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "project_name": "Projeto 2",
+      "project_budget": "$1.000,00",
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 8
     }
-=======
-
->>>>>>> ad6e1c80f5b7bfa12eae776e0f7231d0e3b4568f
->>>>>>> 5ef1a48932f8f1e2c1cf51ea14e706f82d37ec26
   ],
   "categories": [
     {

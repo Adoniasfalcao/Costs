@@ -6,7 +6,6 @@ import logo from '../../img/costs_logo.png'
 function Navbar () {
     return(
         <nav className={styles.navbar}>
-            <Container>
                 <Link to="/"><img src={logo} alt="Costs" className={styles.Imagem} /></Link>
 
                 <ul className={styles.list}>
@@ -16,7 +15,6 @@ function Navbar () {
                     <li className={styles.item}><Link to="/contacts">Contatos</Link></li>
                     
                 </ul>
-            </Container>
         </nav>
     )
 }

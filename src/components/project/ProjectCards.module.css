@@ -3,8 +3,8 @@
     padding: 1rem;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
-    width: 44%;
-    margin: 10px;
+    /* width: 300px; */
+    /* margin: 10px; */
     box-sizing: border-box; 
     text-align: center;
     flex-direction: row;
