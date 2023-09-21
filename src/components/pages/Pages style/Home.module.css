@@ -1,3 +1,4 @@
+/* Estilos padrão */
 .home_container {
     width: 100%;
     display: flex;
@@ -9,11 +10,11 @@
 
 .home_container h1 {
     font-size: 2.5em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 .home_container h1 span {
-    color:#ffbb33;
+    color: #ffbb33;
     padding: 0.1em;
     background-color: #222;
     border-radius: 0.2em;
@@ -27,4 +28,19 @@
 .home_container img {
     width: 350px;
     margin: 2em 0;
+}
+
+/* Estilos para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+    .home_container {
+        width: 300px;
+    }
+
+    .home_container h1 {
+        font-size: 2em;
+    }
+
+    .home_container img {
+        width: 250px;
+    }
 }
