@@ -1,10 +1,12 @@
+/* Estilos padrão */
 .project_card {
     padding: 1rem;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
-    width: 24%;
+    width: 44%;
     margin: 0.5%;
-
+    box-sizing: border-box; 
+    text-align: center;
 }
 
 .project_card h4 {
@@ -39,7 +41,7 @@
 }
 
 .category_text .infraestrutura {
-    background-color: #46b5ff ;
+    background-color: #46b5ff;
 }
 
 .category_text .desenvolvimento {
@@ -57,8 +59,8 @@
 .project_card_actions {
     margin-top: 1.2rem;
     display: flex;
+    flex-wrap: wrap; /* Permita que os botões se ajustem em telas menores */
     align-items: center;
-
 }
 
 .project_card_actions a,
@@ -76,7 +78,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.5s
+    transition: 0.5s;
+    margin-bottom: 0.5rem; /* Adicione espaçamento inferior entre os botões */
+    width: 100%; /* Faça os botões ocuparem a largura total do container */
 }
 
 .project_card_actions button:hover {
@@ -86,8 +90,7 @@
 
 .project_card_actions a:hover {
     background-color: #222;
-    color: #FFBB33
-
+    color: #FFBB33;
 }
 
 .project_card_actions svg {
