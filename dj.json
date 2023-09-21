@@ -34,11 +34,11 @@
       "id": 3
     },
     {
-      "project_name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-      "project_budget": "$1.567,89",
+      "project_name": "Meu projeto super hiper mega blaster gigantesco",
+      "project_budget": "$1.445,46",
       "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
