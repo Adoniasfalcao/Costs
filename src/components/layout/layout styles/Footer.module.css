@@ -1,3 +1,4 @@
+/* Estilos padrão */
 .footer {
     background-color: #222;
     color: #FFF;
@@ -6,7 +7,7 @@
 }
 
 .socialList {
-    display:flex;
+    display: flex;
     justify-content: center;
     list-style-type: none;
     margin-bottom: 1em;
@@ -22,10 +23,25 @@
 
 .socialList svg {
     font-size: 1.5em;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .copy_right span {
     font-weight: bold;
     color: #FFBB33;
+}
+
+/* Estilos para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 1em; /* Reduzir o padding para economizar espaço em telas menores */
+    }
+
+    .socialList li {
+        margin: 0.5em 0.8em; /* Aumentar a margem entre os itens da lista */
+    }
+
+    .socialList svg {
+        font-size: 1.2em; /* Reduzir o tamanho dos ícones */
+    }
 }

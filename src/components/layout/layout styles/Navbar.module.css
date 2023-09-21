@@ -1,9 +1,9 @@
+/* Estilos padrão */
 .navbar {
     display: flex;
     justify-content: space-between;
     background-color: #222;
     padding: 1rem;
-    
 }
 
 .list {
@@ -25,8 +25,25 @@
     color: #FFBB33;
 }
 
-.Imagem:hover{
+.Imagem:hover {
     transform: rotateY(360deg);
     transition: 2s;
 }
 
+/* Estilos para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Altera a direção do flex para empilhar em telas menores */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto na vertical */
+    }
+
+    .list {
+        margin-top: 1rem; /* Adiciona margem superior para espaçamento entre itens na vertical */
+    }
+
+    .item {
+        margin: 0.5rem 0;
+        margin-right: 1rem;
+    }
+}

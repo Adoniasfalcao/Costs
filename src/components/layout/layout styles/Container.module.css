@@ -1,5 +1,6 @@
+/* Estilos padrão */
 .container {
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -7,8 +8,7 @@
 }
 
 .min-height {
-    min-height: 85%;
-
+    min-height: auto; /* Remova a altura mínima */
 }
 
 .start {
@@ -18,4 +18,26 @@
 .column {
     flex-direction: column;
     justify-content: flex-start;
+}
+
+/* Estilos para telas menores, por exemplo, abaixo de 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Altera a direção do flex para empilhar em telas menores */
+        align-items: center; /* Centralize os itens horizontalmente */
+    }
+    
+    .min-height {
+        min-height: auto; /* Remova a altura mínima */
+    }
+    
+    .start {
+        justify-content: center; /* Centralize o conteúdo verticalmente */
+    }
+    
+    .column {
+        flex-direction: column;
+        justify-content: center; /* Centralize o conteúdo verticalmente */
+        align-items: center; /* Centralize o conteúdo horizontalmente */
+    }
 }
