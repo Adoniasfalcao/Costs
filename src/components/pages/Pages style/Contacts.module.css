@@ -29,9 +29,9 @@
 }
 
 .itensNav {
-    color: #fff;
-    margin-right: 1em;
-    margin-top: 7em;
+   margin-left: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
 .listNav {
@@ -40,10 +40,7 @@
     list-style: none;
 }
 
-.itemNav {
-    margin-right: 1em;
-    margin-left: 3em;
-}
+
 
 .escondido {
     opacity:0%
