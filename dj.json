@@ -1,14 +1,22 @@
 {
   "projects": [
+<<<<<<< HEAD
     {
       "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
+=======
+<<<<<<< HEAD
+    {
+      "project_name": "ieurghdnzmdhfgnd",
+      "project_budget": "$1.242,42",
+>>>>>>> 5ef1a48932f8f1e2c1cf51ea14e706f82d37ec26
       "category": {
         "id": "2",
         "name": "Infraestrutura"
       },
       "cost": 0,
       "services": [],
+<<<<<<< HEAD
       "id": 2
     },
     {
@@ -55,6 +63,24 @@
       "services": [],
       "id": 6
     }
+=======
+      "id": 1
+    },
+    {
+      "project_name": "meu nome é fodase",
+      "project_budget": "$1.242,42",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+=======
+
+>>>>>>> ad6e1c80f5b7bfa12eae776e0f7231d0e3b4568f
+>>>>>>> 5ef1a48932f8f1e2c1cf51ea14e706f82d37ec26
   ],
   "categories": [
     {
