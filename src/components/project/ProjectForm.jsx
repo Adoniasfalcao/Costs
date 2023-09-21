@@ -35,7 +35,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
     const newNumericValue = numericValue.replace(/^(\S)(\S)(\S)(\S)(\S)(\S)/g, '$$1.$2$3$4,$5$6')
     
     // Verifique se o valor não está vazio
-    if (numericValue === '') {4
+    if (numericValue === '') {
       return '';
     }
   
