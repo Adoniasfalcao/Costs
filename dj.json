@@ -1,5 +1,6 @@
 {
   "projects": [
+<<<<<<< HEAD
     {
       "project_name": "ieurghdnzmdhfgnd",
       "project_budget": "$1.242,42",
@@ -22,6 +23,9 @@
       "services": [],
       "id": 2
     }
+=======
+
+>>>>>>> ad6e1c80f5b7bfa12eae776e0f7231d0e3b4568f
   ],
   "categories": [
     {
