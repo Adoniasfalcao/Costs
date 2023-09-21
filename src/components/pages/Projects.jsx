@@ -85,7 +85,7 @@ function Projects () {
                     <ProjectCards
                     name={
                         project.project_name.length > 30
-                        ? project.project_name.substring(0, 10) + '...'
+                        ? project.project_name.substring(0, 15) + '...'
                         : project.project_name
                     }
                     key={project.id}
