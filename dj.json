@@ -2,22 +2,6 @@
   "projects": [
     {
 
-      "project_name": "Projeto 1",
-      "project_budget": "$1.000,00",
-
-      "project_name": "Teste 3",
-      "project_budget": "$1.242,35",
-
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-
       "project_name": "Projeto 2",
       "project_budget": "$1.000,00",
 
