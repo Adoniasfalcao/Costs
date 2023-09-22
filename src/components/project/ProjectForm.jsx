@@ -82,8 +82,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         text="Orçamento"
         handleOnChange={handleChange}
         value={project.project_budget}
-      
-      
+        
       />
       <Select
         text="Selecione a categoria"
