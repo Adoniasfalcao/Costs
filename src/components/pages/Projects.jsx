@@ -77,7 +77,7 @@ function Projects () {
                 <Message message={message} type="sucess"/>
             )}
             {projectMessage && (<Message message={projectMessage} type="sucess"/>)}
-
+            
             <Container customClass="start">
 
                 { projects.length > 0 && 
@@ -96,7 +96,7 @@ function Projects () {
                 )}
                     
             </Container>
-
+        
         </div>  
 
     )

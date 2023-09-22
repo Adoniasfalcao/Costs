@@ -12,10 +12,13 @@
 @media screen and (max-width: 768px) {
     .project_container {
         width: 360px;
+        padding: 1rem;
+        padding-bottom: 15%;
     }
 
     .project_container h1 {
         font-size: 2em;
+        
     }
 
 }

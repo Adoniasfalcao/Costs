@@ -34,10 +34,6 @@
         min-height: auto; /* Remova a altura mínima */
     }
     
-    .start {
-        justify-content: center; /* Centralize o conteúdo verticalmente */
-    }
-    
     .column {
         flex-direction: column;
         justify-content: center; /* Centralize o conteúdo verticalmente */
@@ -45,9 +41,8 @@
     }
 
     .start{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        display: flex;
+        gap: 16px;
         justify-content: flex-start;
     }
 }
