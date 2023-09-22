@@ -1,5 +1,61 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "project_name": "Projeto 1",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "project_name": "Projeto 2",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "project_name": "Projeto 3",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "3",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "project_name": "Projeto 4",
+      "project_budget": "$1.000,00",
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "project_name": "Projeto 5",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    }
+  ],
   "categories": [
     {
       "id": 1,

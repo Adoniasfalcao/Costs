@@ -1,0 +1,23 @@
+/* Estilos padrão */
+.edit_project_container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+  }
+  
+  .edit_project_container h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  .edit_project_container p {
+    color: #7b7b7b;
+  }
+  
+  /* Estilos para telas menores, por exemplo, abaixo de 768px */
+  @media screen and (max-width: 768px) {
+    .edit_project_container {
+        width: 100%; /* Defina a largura para 100% para ocupar a largura total da tela */
+        padding: 2em; /* Reduza o espaço de preenchimento */
+    }
+  }
+  
