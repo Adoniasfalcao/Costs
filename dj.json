@@ -1,5 +1,39 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "project_name": "Teste 3",
+      "project_budget": "$1.242,35",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "project_name": "Meu projededefefeefe",
+      "project_budget": "$1.243,24",
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "project_name": "e2r32r2r2r2r23r23r",
+      "project_budget": "$1.231,2313",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    }
+  ],
   "categories": [
     {
       "id": 1,
