@@ -43,4 +43,11 @@
         justify-content: center; /* Centralize o conteúdo verticalmente */
         align-items: center; /* Centralize o conteúdo horizontalmente */
     }
+
+    .start{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: flex-start;
+    }
 }

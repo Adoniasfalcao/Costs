@@ -12,22 +12,6 @@ function Project () {
 
     }
 
-    useEffect( () => {
-
-        fetch(`http://localhost:5000/project/${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type' : 'application/json',
-            },
-        }
-        )
-        .then( resp => resp.json() )
-        .then( data => setProject(data) )
-        .catch( err => console.log(err) )
-
-    },[])
-
-
     return(
         <div className={styles.edit_project_container}>
             <h1>Editar projeto</h1>
