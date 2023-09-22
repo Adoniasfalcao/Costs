@@ -1,10 +1,25 @@
+import { useState } from 'react'
 import styles from './Input.module.css'
 
 function Input ({ type,text,name,placeholder,handleOnChange,value }) {
+
+    const [focus, setFocus] = useState(false)
     return(
         <div className={styles.form_control}>
             <label htmlFor={name}>{text}:</label>
-            <input type={type} placeholder={placeholder} id={name} name={name} onChange={handleOnChange} value={value} maxLength={9}></input>
+            <input 
+            className={focus ? 'OnFocus' : 'FocusOff'}
+            type={type} 
+            placeholder={placeholder} 
+            id={name} 
+            name={name} 
+            onChange={handleOnChange} 
+            value={value} 
+            maxLength={9}
+            onFocus={() => setFocus(true)}
+            onBlur={() => setFocus(false)}
+
+            ></input>
         </div>
     )
 }

@@ -20,3 +20,13 @@
 .form_control input::placeholder {
     color: #7b7b7b
 }
+
+.OnFocus {
+    border-width: 1;
+    border-color: aquamarine;
+}
+
+.FocusOff {
+    border-width: 1;
+    border-color: #7b7b7b;
+}
