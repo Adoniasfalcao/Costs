@@ -1,13 +1,13 @@
 {
   "projects": [
     {
-<<<<<<< HEAD
+
       "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
-=======
+
       "project_name": "Teste 3",
       "project_budget": "$1.242,35",
->>>>>>> e8f70119f0feea7ec2a1d3a542140f77f53ef66c
+
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
@@ -17,13 +17,13 @@
       "id": 1
     },
     {
-<<<<<<< HEAD
+
       "project_name": "Projeto 2",
       "project_budget": "$1.000,00",
-=======
+
       "project_name": "Meu projededefefeefe",
       "project_budget": "$1.243,24",
->>>>>>> e8f70119f0feea7ec2a1d3a542140f77f53ef66c
+
       "category": {
         "id": "2",
         "name": "Infraestrutura"
@@ -33,24 +33,24 @@
       "id": 2
     },
     {
-<<<<<<< HEAD
+
       "project_name": "Projeto 3",
       "project_budget": "$1.000,00",
       "category": {
         "id": "3",
         "name": "Planejamento"
-=======
+      },
       "project_name": "e2r32r2r2r2r23r23r",
       "project_budget": "$1.231,2313",
       "category": {
         "id": "4",
         "name": "Design"
->>>>>>> e8f70119f0feea7ec2a1d3a542140f77f53ef66c
+
       },
       "cost": 0,
       "services": [],
       "id": 3
-<<<<<<< HEAD
+
     },
     {
       "category": {
@@ -73,8 +73,7 @@
       "cost": 0,
       "services": [],
       "id": 5
-=======
->>>>>>> e8f70119f0feea7ec2a1d3a542140f77f53ef66c
+
     }
   ],
   "categories": [

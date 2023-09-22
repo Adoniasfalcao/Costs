@@ -5,7 +5,20 @@ import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 
 function ProjectForm({ btnText, handleSubmit, projectData }) {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([
+    {
+    name: "Desenvolvimento"
+  },
+  {
+    name: "Infraestrutura"
+  },
+  {
+    name: "Planejamento"
+  },
+  {
+    name: "Desing"
+  }
+]);
   const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
