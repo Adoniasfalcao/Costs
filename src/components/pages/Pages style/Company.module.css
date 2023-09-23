@@ -14,14 +14,14 @@
 .company_container p {
     margin-bottom: 1.5em;
     color: #7b7b7b;
-    max-width: 450px; 
+    width: 450px; 
     font-size: 1.5em;
-    text-align:justify;
+    word-spacing: -0.09em;
+    text-align: justify;
 }
 
 .company_container p span {
     color: #ffbb33;
-    padding: 0.1em;
 }
 
 .company_container img {
