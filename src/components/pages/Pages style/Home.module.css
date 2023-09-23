@@ -33,12 +33,16 @@
 
 /* Estilos para telas menores, por exemplo, abaixo de 768px */
 @media screen and (max-width: 768px) {
-    .home_container {
+    /* .home_container {
         width: 360px;
-    }
+    }  Configuração anterior*/
 
     .home_container h1 {
         font-size: 2em;
+    }
+
+    .home_container p,.home_container h1 {
+        text-align: center;
     }
 
     .home_container img {

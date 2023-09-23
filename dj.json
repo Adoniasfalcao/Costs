@@ -1,13 +1,8 @@
 {
   "projects": [
     {
-
-      "project_name": "Projeto 2",
-      "project_budget": "$1.000,00",
-
       "project_name": "Meu projededefefeefe",
       "project_budget": "$1.243,24",
-
       "category": {
         "id": "2",
         "name": "Infraestrutura"
@@ -17,24 +12,15 @@
       "id": 2
     },
     {
-
-      "project_name": "Projeto 3",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "3",
-        "name": "Planejamento"
-      },
       "project_name": "e2r32r2r2r2r23r23r",
       "project_budget": "$1.231,2313",
       "category": {
         "id": "4",
         "name": "Design"
-
       },
       "cost": 0,
       "services": [],
       "id": 3
-
     },
     {
       "category": {
@@ -57,7 +43,17 @@
       "cost": 0,
       "services": [],
       "id": 5
-
+    },
+    {
+      "project_name": "Projeto 4",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
