@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em;
+    padding: 4em; 
 }
 
 .contacts_container h1 {
@@ -29,7 +29,7 @@
 }
 
 .itensNav {
-   margin-left: 80px;
+    margin-left: 80px;
     justify-content: center;
     align-items: center;
 }
@@ -39,7 +39,6 @@
     align-items: center; 
     list-style: none;
 }
-
 
 
 .escondido {
@@ -57,3 +56,10 @@
     transition: 2s;
 }
 
+@media screen and (max-width: 768px) {
+
+    .contacts_container h1 {
+        font-size: 2em;
+    }
+
+}
