@@ -23,14 +23,16 @@
       "id": 3
     },
     {
+
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "project_name": "Projeto 4",
-      "project_budget": "$1.000,00",
       "cost": 0,
       "services": [],
+
+      "id": 1,
+
       "id": 4
     },
     {
@@ -54,6 +56,7 @@
       "cost": 0,
       "services": [],
       "id": 6
+
     }
   ],
   "categories": [

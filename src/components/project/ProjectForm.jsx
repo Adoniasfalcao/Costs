@@ -4,6 +4,8 @@ import Input from '../form/Input';
 import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 
+
+
 function ProjectForm({ btnText, handleSubmit, projectData }) {
   const [categories, setCategories] = useState([
     {
@@ -37,8 +39,11 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   }, []);
 
   const submit = (event) => {
+    
     event.preventDefault();
+    
     handleSubmit(project);
+    
   };
 
   // Função para formatar o valor como moeda (BRL)
@@ -103,6 +108,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         options={categories}
         handleOnChange={handleCategory}
         value={project.category ? project.category.id : ''}
+        
       />
       <SubmitButton text={btnText} />
     </form>
