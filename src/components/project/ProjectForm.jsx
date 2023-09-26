@@ -42,8 +42,11 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
     
     event.preventDefault();
     
-    handleSubmit(project);
-    
+    if (project.project_name && project.project_budget && project.category){ 
+      handleSubmit(project);
+    }else{
+      alert("Complete todas as informações!")
+    }
   };
 
   // Função para formatar o valor como moeda (BRL)
