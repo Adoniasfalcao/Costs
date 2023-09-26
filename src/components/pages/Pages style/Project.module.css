@@ -47,6 +47,7 @@
   width:100%;
 }
 
+/* Telas com largura máxima de 768px */
 @media screen and (max-width: 768px) {
 
   .project_info {
