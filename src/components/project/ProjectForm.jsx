@@ -30,12 +30,12 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         'content-Type': 'application/json',
       },
     })
-      .then((resp) => resp.json())
-      .then((data) => {
+      .then( (resp) => resp.json() )
+      .then( (data) => {
         setCategories(data);
         console.log(data)
       })
-      .catch((err) => console.log(err));
+      .catch( (err) => console.log(err) );
   }, []);
 
   const submit = (event) => {
