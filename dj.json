@@ -1,11 +1,7 @@
 {
   "projects": [
     {
-
-      "project_name": "Dhenzel Lima Ribeiro",
-      "project_budget": "$1.567,89",
-
-      "project_name": "Projeto 1",
+      "project_name": "Projeto 1 att",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -16,7 +12,7 @@
       "id": 1
     },
     {
-      "project_name": "Projeto 2",
+      "project_name": "Projeto 3 ",
       "project_budget": "$1.000,00",
       "category": {
         "id": "3",
@@ -24,22 +20,18 @@
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 4
     },
     {
-      "project_name": "Projeto 3",
+      "project_name": "Projeto 1 att",
       "project_budget": "$1.000,00",
-
       "category": {
-        "id": "2",
-        "name": "Infraestrutura"
+        "id": "1",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-
-      "id": 1,
-
-      "id": 3
+      "id": 6
     },
     {
       "project_name": "Projeto 4",
@@ -50,8 +42,7 @@
       },
       "cost": 0,
       "services": [],
-      "id": 4
-
+      "id": 7
     }
   ],
   "categories": [

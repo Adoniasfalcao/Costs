@@ -4,14 +4,17 @@ import { useState, useEffect } from 'react'
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
+import Message from '../layout/Message'
 
 
 function Project () {
 
-    //Definindo variáveis para fazer associação ao projeto
+    //Variáveis que se associam ao projeto
     const { id } = useParams()
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
+    const [message, setMessage] = useState()
+    const [type, setType] = useState()
 
 
     //Pegando projetos do JSON
@@ -38,10 +41,13 @@ function Project () {
     function editPost (project) {
         
         if (project.project_budget < project.costs) {
-            //Nada ainda
+            setMessage('O orçamento não pode ser menor que os custos do projeto!')
+            setType('error')
+            return false
         }
 
-        fetch(`http//localhost:5000/projects/${id}`, {
+
+        fetch(`http://localhost:5000/projects/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type':'application/json'
@@ -54,9 +60,12 @@ function Project () {
 
             setProject(data) 
             setShowProjectForm(false)
+            setMessage('Projeto atualizado com sucesso!')
+            setType('sucess')
 
         })
-        .catch( err => console.log(err) ) 
+        .catch( err => console.log(err) )
+        
     }
 
 
@@ -71,10 +80,15 @@ function Project () {
             {project.project_name ?
              (
                 <div className={styles.project_details}>
+
                     <Container customClass="column">
+                        {message && <Message type={type} message={message}/>}
+
                         <div className={styles.details_container}>
+
                             <h1>Projeto: {project.project_name}</h1>
                             <button onClick={toggleProjectForm} className={styles.btn}>{!showProjectForm ? 'Editar projeto' : 'Fechar'}</button>
+
 
                             {!showProjectForm ?
                             (
@@ -96,7 +110,7 @@ function Project () {
                             (
                                 <div className={styles.project_info}>
                                     <p>Editar projeto</p>
-                                    <ProjectForm handleSubmit={editPost} btnText="Concluir edição" projectData={project} />
+                                    <ProjectForm handleSubmit={editPost} btnText="Concluir edição" projectData={project} key={project.id}/>
                                 </div>
                             )}
 
