@@ -33,8 +33,8 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
     })
       .then( (resp) => resp.json() )
       .then( (data) => {
+
         setCategories(data);
-        console.log(data)
       })
       .catch( (err) => console.log(err) );
   }, []);
@@ -86,7 +86,9 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   }
 
   return (
+
     <form className={styles.form} onSubmit={submit}>
+
       <Input
         name="project_name"
         type="text"
@@ -97,6 +99,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         }
         value={project.project_name}
       />
+
       <Input
         name="project_budget"
         type="text"
@@ -106,6 +109,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         value={project.project_budget}
         
       />
+
       <Select
         text="Selecione a categoria"
         name="select_category"
@@ -114,6 +118,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         value={project.category ? project.category.id : ''}
         
       />
+      
       <SubmitButton text={btnText} />
     </form>
   );
