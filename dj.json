@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "project_name": "Projeto 1 att",
+      "project_name": "Projeto 1 ",
       "project_budget": "$1.000,00",
       "category": {
         "id": "1",
@@ -23,11 +23,11 @@
       "id": 4
     },
     {
-      "project_name": "Projeto 1 att",
+      "project_name": "Projeto 2",
       "project_budget": "$1.000,00",
       "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
+        "id": "4",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
