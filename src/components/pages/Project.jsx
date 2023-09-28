@@ -129,8 +129,8 @@ function Project () {
 
     }
 
-
-    function removeService () {
+    //Remover serviços
+    function removeService (id,cost) {
 
     }
 
