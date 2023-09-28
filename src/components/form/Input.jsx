@@ -15,7 +15,7 @@ function Input ({ type,text,name,placeholder,handleOnChange,value }) {
             name={name} 
             onChange={handleOnChange} 
             value={value} 
-            maxLength={20}
+            maxLength={30}
             onFocus={() => setFocus(true)}
             onBlur={() => setFocus(false)}
 
