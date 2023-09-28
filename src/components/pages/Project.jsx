@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
+import ServiceForm from '../services/ServiceForm'
 import Message from '../layout/Message'
 
 
@@ -98,7 +99,7 @@ function Project () {
                             <h1>Nome do Projeto: {project.project_name}</h1>
                             <button onClick={toggleProjectForm} className={styles.btn}>{!showProjectForm ? 'Editar projeto' : 'Fechar'}</button>
 
-
+                            
                             {!showProjectForm ?
                             (
                                 <div className={styles.project_info}>
@@ -131,12 +132,11 @@ function Project () {
                                 {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
                             </button>
 
+
                             <div className={styles.project_info}>
 
                                 {showServiceForm && (
-                                    <div>
-                                        Formulário do serviço
-                                    </div>
+                                    <ServiceForm/>
                                 )}
                             </div>
 
