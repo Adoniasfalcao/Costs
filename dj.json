@@ -1,14 +1,37 @@
 {
   "projects": [
     {
+
       "project_name": "Projeto 15",
       "project_budget": "$1.567,89",
+
+      "project_name": "Projeto 1",
+      "project_budget": "$1.000,00",
+
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
+
       "cost": 0,
       "services": [],
+
+      "cost": 1000,
+      "services": [
+        {
+          "name": "AWS",
+          "cost": "900",
+          "description": "Faze jogin",
+          "id": "76b1a7b6-56d6-43d2-aba7-cf5be9de7117"
+        },
+        {
+          "name": "Firebase",
+          "cost": "100",
+          "description": "Faze jogin",
+          "id": "3afe8794-2b84-42a6-a9c7-73fcf57b8ba1"
+        }
+      ],
+
       "id": 1
     }
   ],
