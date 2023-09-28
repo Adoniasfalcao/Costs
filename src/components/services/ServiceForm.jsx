@@ -14,19 +14,21 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
         e.preventDefault();
         
         projectData.services.push(service)
-
+        
          if (projectData.services.name && projectData.services.cost && projectData.services.description){ 
             handleSubmit(projectData);
+            console.log(projectData.name)
         }else{
-        alert("Complete todas as informações!")
+            alert("Complete todas as informações!")
         }
     };
 
 
     //Mudança de estado
     function handleChange (e) {
-
+        
         if (e.target.value != '') {
+            
             setService( {...service, [e.target.name]: e.target.value})
 
         } else {

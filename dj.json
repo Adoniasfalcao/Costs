@@ -1,51 +1,15 @@
 {
   "projects": [
     {
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "project_name": "Projeto 4",
-      "project_budget": "$1.000,00",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "project_name": "Projeto de teste",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "cost": null,
-      "services": [
-        {
-          "name": "Adonias",
-          "cost": "12",
-          "description": "Serviço de nuvem",
-          "id": "21c73467-e700-4ba0-8c8d-9facb0c75265"
-        },
-        {
-          "name": "AWS",
-          "cost": "120",
-          "description": "Serviço de nuvem",
-          "id": "da019994-afd3-4a23-8efd-43dbc5fdbe0c"
-        },
-        []
-      ],
-      "id": 5
-    },
-    {
-      "project_name": "Projeto 6",
-      "project_budget": "$1.000,00",
+      "project_name": "Projeto 15",
+      "project_budget": "$1.567,89",
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 6
+      "id": 1
     }
   ],
   "categories": [
