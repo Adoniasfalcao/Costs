@@ -15,11 +15,11 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
         
         projectData.services.push(service)
 
-         if (projectData.project_name && projectData.project_budget && projectData.category){ 
-      handleSubmit(projectData);
-    }else{
-      alert("Complete todas as informações!")
-    }
+         if (projectData.services.name && projectData.services.cost && projectData.services.description){ 
+            handleSubmit(projectData);
+        }else{
+        alert("Complete todas as informações!")
+        }
     };
 
 

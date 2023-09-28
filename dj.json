@@ -18,7 +18,7 @@
         "id": "2",
         "name": "Infraestrutura"
       },
-      "cost": 132,
+      "cost": null,
       "services": [
         {
           "name": "Adonias",
@@ -31,7 +31,8 @@
           "cost": "120",
           "description": "Serviço de nuvem",
           "id": "da019994-afd3-4a23-8efd-43dbc5fdbe0c"
-        }
+        },
+        []
       ],
       "id": 5
     },
