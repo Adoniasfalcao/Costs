@@ -6,7 +6,7 @@ import styles from '../project/ProjectForm.module.css'
 
 function ServiceForm ({ handleSubmit, btnText, projectData }) {
 
-    const [service, setService] = useState({})
+    const [service, setService] = useState([])
 
 
     //Enviar dados
@@ -17,10 +17,14 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
     };
 
 
+    //Mudança de estado
     function handleChange (e) {
 
         if (e.target.value != '') {
             setService( {...service, [e.target.name]: e.target.value})
+
+        } else {
+            alert("Complete todas as informações!")
         }
     }
 
