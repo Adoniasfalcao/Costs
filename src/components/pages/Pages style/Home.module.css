@@ -12,6 +12,7 @@
 .home_container h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    box-shadow: 1px 1px 9px #222;
 }
 
 .home_container h1 span {

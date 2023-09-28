@@ -2,6 +2,7 @@
   "projects": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "project_name": "Meu projededefefeefe",
       "project_budget": "$1.243,24",
 =======
@@ -13,6 +14,10 @@
       "project_budget": "$1.000,00",
 
 >>>>>>> cf95f43ea2daa9f8b86788370906f07914cf4074
+=======
+      "project_name": "Projeto 15",
+      "project_budget": "$1.000,00",
+>>>>>>> 1a95f07e46923979b88e19238d611ee4ca6a3b6d
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
@@ -20,6 +25,7 @@
       "cost": 0,
       "services": [],
       "id": 1
+<<<<<<< HEAD
 
     },
     {
@@ -90,6 +96,8 @@
       "id": 7
 
 >>>>>>> cf95f43ea2daa9f8b86788370906f07914cf4074
+=======
+>>>>>>> 1a95f07e46923979b88e19238d611ee4ca6a3b6d
     }
   ],
   "categories": [

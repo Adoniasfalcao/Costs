@@ -29,6 +29,11 @@
     margin: 0.5em 0 2em;
 }
 
+.Imagem:hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
 @media screen and (max-width: 768px) {
 
     .contacts_container h1 {
