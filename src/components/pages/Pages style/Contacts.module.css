@@ -34,17 +34,20 @@
     margin-left: 80px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .listNav {
     display: flex;
     align-items: center; 
     list-style: none;
+    
 }
 
 
 .escondido {
-    opacity:0%
+    opacity:0%;
+    
 }
 
 .itemNav:hover {

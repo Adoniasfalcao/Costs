@@ -12,8 +12,14 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
     //Enviar dados
     function submit (e) { 
         e.preventDefault();
+        
         projectData.services.push(service)
-        handleSubmit(projectData)   
+
+         if (projectData.project_name && projectData.project_budget && projectData.category){ 
+      handleSubmit(projectData);
+    }else{
+      alert("Complete todas as informações!")
+    }
     };
 
 
