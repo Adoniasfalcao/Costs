@@ -4,6 +4,9 @@ import Input from '../form/Input';
 import Select from '../form/Select';
 import SubmitButton from '../form/SubmitButton';
 
+
+
+
 function ProjectForm({ btnText, handleSubmit, projectData }) {
   const [categories, setCategories] = useState([
     {
@@ -28,17 +31,23 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         'content-Type': 'application/json',
       },
     })
-      .then((resp) => resp.json())
-      .then((data) => {
+      .then( (resp) => resp.json() )
+      .then( (data) => {
+
         setCategories(data);
-        console.log(data)
       })
-      .catch((err) => console.log(err));
+      .catch( (err) => console.log(err) );
   }, []);
 
   const submit = (event) => {
+    
     event.preventDefault();
-    handleSubmit(project);
+    
+    if (project.project_name && project.project_budget && project.category){ 
+      handleSubmit(project);
+    }else{
+      alert("Complete todas as informações!")
+    }
   };
 
   // Função para formatar o valor como moeda (BRL)
@@ -77,7 +86,9 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   }
 
   return (
+
     <form className={styles.form} onSubmit={submit}>
+
       <Input
         name="project_name"
         type="text"
@@ -88,6 +99,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         }
         value={project.project_name}
       />
+
       <Input
         name="project_budget"
         type="text"
@@ -97,13 +109,16 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         value={project.project_budget}
         
       />
+
       <Select
         text="Selecione a categoria"
         name="select_category"
         options={categories}
         handleOnChange={handleCategory}
         value={project.category ? project.category.id : ''}
+        
       />
+      
       <SubmitButton text={btnText} />
     </form>
   );
