@@ -73,6 +73,12 @@ function Project () {
     }
 
 
+    //Criação de serviço
+    function createService () {
+
+    }
+
+    
     //Mostrar formulário de edição
     function toggleProjectForm () {
         setShowProjectForm(!showProjectForm)
@@ -136,7 +142,7 @@ function Project () {
                             <div className={styles.project_info}>
 
                                 {showServiceForm && (
-                                    <ServiceForm/>
+                                    <ServiceForm handleSubmit={createService} btnText='Adicionar serviço' projectData={project}/>
                                 )}
                             </div>
 

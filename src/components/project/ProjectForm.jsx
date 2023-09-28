@@ -39,6 +39,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
       .catch( (err) => console.log(err) );
   }, []);
 
+  //Enviar dados
   const submit = (event) => {
     
     event.preventDefault();
