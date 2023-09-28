@@ -7,40 +7,22 @@
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "cost": 1000,
-      "services": [
-        {
-          "name": "AWS",
-          "cost": "900",
-          "description": "Faze jogin",
-          "id": "76b1a7b6-56d6-43d2-aba7-cf5be9de7117"
-        },
-        {
-          "name": "Firebase",
-          "cost": "100",
-          "description": "Faze jogin",
-          "id": "3afe8794-2b84-42a6-a9c7-73fcf57b8ba1"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "project_name": "Projeto 2",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 120,
+      "cost": 240,
       "services": [
         {
           "name": "AWS",
           "cost": "120",
           "description": "Serviço de nuvem",
-          "id": "52784a66-9de3-4d84-9dd5-df2d1e371b79"
+          "id": "a5eff736-2178-474e-869e-61b67b23f2ff"
+        },
+        {
+          "name": "Firebase",
+          "cost": "120",
+          "description": "Serviço de nuvem",
+          "id": "e9eea11b-6e26-4015-a1f9-95b48b0252dc"
         }
       ],
-      "id": 2
+      "id": 1
     }
   ],
   "categories": [
