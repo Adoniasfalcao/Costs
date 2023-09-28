@@ -34,8 +34,6 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
             alert("Complete todas as informações!")
         }
 
-        setService( {...service, [e.target.name]: e.target.value})
-
     }
 
 

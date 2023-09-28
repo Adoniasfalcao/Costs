@@ -1,21 +1,12 @@
 {
   "projects": [
     {
-
-      "project_name": "Projeto 15",
-      "project_budget": "$1.567,89",
-
       "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
-
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
-
-      "cost": 0,
-      "services": [],
-
       "cost": 1000,
       "services": [
         {
@@ -31,8 +22,25 @@
           "id": "3afe8794-2b84-42a6-a9c7-73fcf57b8ba1"
         }
       ],
-
       "id": 1
+    },
+    {
+      "project_name": "Projeto 2",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "1",
+        "name": "Desenvolvimento"
+      },
+      "cost": 120,
+      "services": [
+        {
+          "name": "AWS",
+          "cost": "120",
+          "description": "Serviço de nuvem",
+          "id": "52784a66-9de3-4d84-9dd5-df2d1e371b79"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
