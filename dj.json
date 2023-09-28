@@ -1,12 +1,21 @@
 {
   "projects": [
     {
+
+      "project_name": "Projeto 15",
+      "project_budget": "$1.567,89",
+
       "project_name": "Projeto 1",
       "project_budget": "$1.000,00",
+
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
+
+      "cost": 0,
+      "services": [],
+
       "cost": 1000,
       "services": [
         {
@@ -22,6 +31,7 @@
           "id": "3afe8794-2b84-42a6-a9c7-73fcf57b8ba1"
         }
       ],
+
       "id": 1
     }
   ],

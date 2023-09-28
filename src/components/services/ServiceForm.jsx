@@ -24,7 +24,18 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
   
     //Mudança de estado
     function handleChange (e) {
+
+        
+        if (e.target.value != '') {
+            
+            setService( {...service, [e.target.name]: e.target.value})
+
+        } else {
+            alert("Complete todas as informações!")
+        }
+
         setService( {...service, [e.target.name]: e.target.value})
+
     }
 
 
