@@ -16,6 +16,7 @@ function Project () {
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
+    const [services, setServices] = useState([])
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -74,11 +75,17 @@ function Project () {
     }
 
 
+    function formatedNumber (num) {
+         num = num.replace(/[.,$]/g,'')
+         num = num.replace(/(\S)(\S)$/,'')
+        return num
+
+    }
+
     //Criação de serviço
     function createService (project) {
 
         setMessage('')
-
         //Último serviço
         const lastService = project.services[project.services.length - 1]
         lastService.id = uuidv4()
@@ -86,10 +93,17 @@ function Project () {
         const lastServiceCost = lastService.cost
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)  
 
+        console.log(newCost)
+
+        const formatedBudget = formatedNumber(project.project_budget)
+        console.log(formatedBudget)
+
+
         //Validação de custo máximo
-        if (newCost > parseFloat((project.project_budget).slice(0))) {
+        if (newCost > parseFloat(formatedBudget)) {
             setMessage('Orçamento ultrapassado, verifique o valor do serviço!')
             setType('error')
+            console.log('Foi aqui')
             project.services.pop()
             return false
         }
@@ -109,9 +123,11 @@ function Project () {
         .then( (resp) => resp.json() )
         .then( (data) => {
             //Exibir serviços
+            setServices(data.services)
+            setMessage('Serviço criado!')
+            setType('sucess')
             console.log(data)
         })
-        .catch( err => console.log(err) )
 
     }
 

@@ -1,51 +1,28 @@
 {
   "projects": [
     {
+      "project_name": "Projeto 1",
+      "project_budget": "$1.000,00",
       "category": {
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "project_name": "Projeto 4",
-      "project_budget": "$1.000,00",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "project_name": "Projeto de teste",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "2",
-        "name": "Infraestrutura"
-      },
-      "cost": null,
+      "cost": 1000,
       "services": [
         {
-          "name": "Adonias",
-          "cost": "12",
-          "description": "Serviço de nuvem",
-          "id": "21c73467-e700-4ba0-8c8d-9facb0c75265"
+          "name": "AWS",
+          "cost": "900",
+          "description": "Faze jogin",
+          "id": "76b1a7b6-56d6-43d2-aba7-cf5be9de7117"
         },
         {
-          "name": "AWS",
-          "cost": "120",
-          "description": "Serviço de nuvem",
-          "id": "da019994-afd3-4a23-8efd-43dbc5fdbe0c"
-        },
-        []
+          "name": "Firebase",
+          "cost": "100",
+          "description": "Faze jogin",
+          "id": "3afe8794-2b84-42a6-a9c7-73fcf57b8ba1"
+        }
       ],
-      "id": 5
-    },
-    {
-      "project_name": "Projeto 6",
-      "project_budget": "$1.000,00",
-      "category": {
-        "id": "1",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
+      "id": 1
     }
   ],
   "categories": [

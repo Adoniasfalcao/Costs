@@ -8,30 +8,23 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
 
     const [service, setService] = useState([])
 
-
     //Enviar dados
     function submit (e) { 
         e.preventDefault();
-        
         projectData.services.push(service)
 
-         if (projectData.services.name && projectData.services.cost && projectData.services.description){ 
-            handleSubmit(projectData);
-        }else{
-        alert("Complete todas as informações!")
+        if (service.name && service.cost && service.description) {
+            handleSubmit(projectData)
+
+        } else{
+            alert('Complete todas as informações')
         }
     };
 
-
+  
     //Mudança de estado
     function handleChange (e) {
-
-        if (e.target.value != '') {
-            setService( {...service, [e.target.name]: e.target.value})
-
-        } else {
-            alert("Complete todas as informações!")
-        }
+        setService( {...service, [e.target.name]: e.target.value})
     }
 
 
