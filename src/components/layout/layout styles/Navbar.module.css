@@ -14,15 +14,22 @@
 
 .item {
     margin-right: 1rem;
+    
+    
 }
 
 .item a {
     color: #FFF;
     text-decoration: none;
+    
 }
 
 .item a:hover {
-    color: #FFBB33;
+    background-color: #FFBB33;
+    box-shadow: 1px 2px 5px #FFBB33;
+    border-radius: 4px;
+    padding: 4px;
+    
 }
 
 .Imagem:hover {
