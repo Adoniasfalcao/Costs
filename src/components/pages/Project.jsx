@@ -14,9 +14,9 @@ function Project () {
     //Variáveis que se associam ao projeto
     const { id } = useParams()
     const [project, setProject] = useState([])
+    const [services, setServices] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
-    const [services, setServices] = useState([])
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -93,7 +93,6 @@ function Project () {
         const lastServiceCost = lastService.cost
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)  
 
-
         const formatedBudget = formatedNumber(project.project_budget)
 
         //Validação de custo máximo
@@ -119,7 +118,6 @@ function Project () {
         .then( (resp) => resp.json() )
         .then( (data) => {
             //Exibir serviços
-            setServices(data.services)
             setMessage('Serviço criado!')
             setType('sucess')
         })
@@ -200,7 +198,13 @@ function Project () {
 
                         <h2>Serviços</h2>
                         <Container customClass='start'>
-                                <p>Serviços</p>
+                            {services.length > 0 
+
+                            }
+
+                            {services.length === 0 && (<p>Não há serviços adicionados..</p>)
+
+                            }
                         </Container>
 
                     </Container>
