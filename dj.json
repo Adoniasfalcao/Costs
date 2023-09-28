@@ -7,7 +7,7 @@
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "cost": 240,
+      "cost": 680,
       "services": [
         {
           "name": "AWS",
@@ -20,6 +20,18 @@
           "cost": "120",
           "description": "Serviço de nuvem",
           "id": "e9eea11b-6e26-4015-a1f9-95b48b0252dc"
+        },
+        {
+          "name": "Amazon EC2",
+          "cost": "240",
+          "description": "Serviço de computação em nuvem",
+          "id": "473149e7-d4b6-42e1-8100-398aed87017c"
+        },
+        {
+          "name": "Amazon Dynamo DB",
+          "cost": "200",
+          "description": "Serviço de banco de dados",
+          "id": "104bef28-00a7-45b0-b3d0-ced0afed3f32"
         }
       ],
       "id": 1

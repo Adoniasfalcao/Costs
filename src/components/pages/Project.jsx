@@ -124,6 +124,7 @@ function Project () {
             //Exibir serviços
             setMessage('Serviço criado!')
             setType('sucess')
+            setShowServiceForm(false)
         })
 
     }
@@ -151,31 +152,21 @@ function Project () {
             {project.project_name ?
              (
                 <div className={styles.project_details}>
-                    
                     {/* Edição do projeto*/}
                     <Container customClass="column">
                         {message && <Message type={type} message={message}/>}
 
                         <div className={styles.details_container}>
 
-                            <h1>Nome do Projeto: {project.project_name}</h1>
+                            <h1>Nome: {project.project_name}</h1>
                             <button onClick={toggleProjectForm} className={styles.btn}>{!showProjectForm ? 'Editar projeto' : 'Fechar'}</button>
 
-                            
                             {!showProjectForm ?
                             (
                                 <div className={styles.project_info}>
-                                    <p> 
-                                        <span>Categoria:</span> {project.category.name}
-                                    </p>
-
-                                    <p>
-                                        <span>Total de orçamento:</span> {project.project_budget}
-                                    </p>
-
-                                    <p>
-                                        <span>Total utilizado:</span> ${project.cost}
-                                    </p>
+                                    <p> <span>Categoria:</span> {project.category.name} </p>
+                                    <p> <span>Total de orçamento:</span> R{project.project_budget} </p>
+                                    <p> <span>Total utilizado:</span> R${project.cost} </p>
                                 </div>
                             ) :
                             (
@@ -194,9 +185,7 @@ function Project () {
                                 {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
                             </button>
 
-
                             <div className={styles.project_info}>
-
                                 {showServiceForm && (
                                     <ServiceForm handleSubmit={createService} btnText='Adicionar serviço' projectData={project}/>
                                 )}
@@ -204,8 +193,8 @@ function Project () {
 
                         </div>
 
-
                         <h2>Serviços</h2>
+
                         <Container customClass='start'>
                             {services.length > 0 &&
                             services.map( (service) => (
