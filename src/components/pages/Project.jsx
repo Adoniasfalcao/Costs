@@ -93,17 +93,13 @@ function Project () {
         const lastServiceCost = lastService.cost
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)  
 
-        console.log(newCost)
 
         const formatedBudget = formatedNumber(project.project_budget)
-        console.log(formatedBudget)
-
 
         //Validação de custo máximo
         if (newCost > parseFloat(formatedBudget)) {
             setMessage('Orçamento ultrapassado, verifique o valor do serviço!')
             setType('error')
-            console.log('Foi aqui')
             project.services.pop()
             return false
         }
@@ -126,7 +122,6 @@ function Project () {
             setServices(data.services)
             setMessage('Serviço criado!')
             setType('sucess')
-            console.log(data)
         })
 
     }
