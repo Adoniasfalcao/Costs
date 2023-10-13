@@ -26,7 +26,7 @@ function ServiceForm ({ handleSubmit, btnText, projectData }) {
     function handleChange (e) {
 
         
-        if (e.target.value != '') {
+        if (e.target.value !== '') {
             
             setService( {...service, [e.target.name]: e.target.value})
 

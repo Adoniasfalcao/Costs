@@ -7,34 +7,42 @@
         "id": "1",
         "name": "Desenvolvimento"
       },
-      "cost": 680,
-      "services": [
-        {
-          "name": "AWS",
-          "cost": "120",
-          "description": "Serviço de nuvem",
-          "id": "a5eff736-2178-474e-869e-61b67b23f2ff"
-        },
-        {
-          "name": "Firebase",
-          "cost": "120",
-          "description": "Serviço de nuvem",
-          "id": "e9eea11b-6e26-4015-a1f9-95b48b0252dc"
-        },
-        {
-          "name": "Amazon EC2",
-          "cost": "240",
-          "description": "Serviço de computação em nuvem",
-          "id": "473149e7-d4b6-42e1-8100-398aed87017c"
-        },
-        {
-          "name": "Amazon Dynamo DB",
-          "cost": "200",
-          "description": "Serviço de banco de dados",
-          "id": "104bef28-00a7-45b0-b3d0-ced0afed3f32"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 1
+    },
+    {
+      "project_name": "Projeto 2",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "2",
+        "name": "Infraestrutura"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "project_name": "Projeto 3 ",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "3",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "project_name": "Projeto 4",
+      "project_budget": "$1.000,00",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [
