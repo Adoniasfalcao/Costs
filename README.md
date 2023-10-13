@@ -1,6 +1,6 @@
 # Costs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). \
 Modelo de exibição: https://costs-82f17.web.app/
 
 ## Available Scripts
