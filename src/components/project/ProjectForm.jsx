@@ -1,73 +1,58 @@
-import { useEffect, useState } from 'react';
-import styles from './ProjectForm.module.css';
-import Input from '../form/Input';
-import Select from '../form/Select';
-import SubmitButton from '../form/SubmitButton';
-
-
-
+import { useState } from "react";
+import styles from "./ProjectForm.module.css";
+import Input from "../form/Input";
+import Select from "../form/Select";
+import SubmitButton from "../form/SubmitButton";
 
 function ProjectForm({ btnText, handleSubmit, projectData }) {
-  const [categories, setCategories] = useState([
-    {
-    name: "Desenvolvimento"
-  },
-  {
-    name: "Infraestrutura"
-  },
-  {
-    name: "Planejamento"
-  },
-  {
-    name: "Desing"
-  }
-]);
+
   const [project, setProject] = useState(projectData || {});
+  const categories = [
+    {
+      name: "Desenvolvimento",
+    },
+    {
+      name: "Infraestrutura",
+    },
+    {
+      name: "Planejamento",
+    },
+    {
+      name: "Desing",
+    },
+  ];
 
-  useEffect(() => {
-    fetch('http://localhost:5000/categories', {
-      method: 'GET',
-      headers: {
-        'content-Type': 'application/json',
-      },
-    })
-      .then( (resp) => resp.json() )
-      .then( (data) => {
-
-        setCategories(data);
-      })
-      .catch( (err) => console.log(err) );
-  }, []);
 
   //Enviar dados
   const submit = (event) => {
-    
     event.preventDefault();
-    
-    if (project.project_name && project.project_budget && project.category){ 
+
+    if (project.project_name && project.project_budget && project.category) {
       handleSubmit(project);
-    }else{
-      alert("Complete todas as informações!")
+    } else {
+      alert("Complete todas as informações!");
     }
   };
 
   // Função para formatar o valor como moeda (BRL)
   const formatCurrency = (value) => {
     // Remova todos os caracteres não numéricos
-    const numericValue = value.replace(/\D/g, '');
-    const newNumericValue = numericValue.replace(/^(\S)(\S)(\S)(\S)(\S)(\S)/g, '$$1.$2$3$4,$5$6')
-    
+    const numericValue = value.replace(/\D/g, "");
+    const newNumericValue = numericValue.replace(
+      /^(\S)(\S)(\S)(\S)(\S)(\S)/g,
+      "$$1.$2$3$4,$5$6"
+    );
+
     // Verifique se o valor não está vazio
-    if (numericValue === '') {
-      return '';
+    if (numericValue === "") {
+      return "";
     }
-  
-    // Converta para um número2dsad
+
+    // Converta para um número
     const floatValue = newNumericValue;
-    return floatValue
-    
+    return floatValue;
+
     // Formate apenas se for um número válido
-   
   };
 
   function handleChange(event) {
@@ -87,9 +72,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
   }
 
   return (
-
     <form className={styles.form} onSubmit={submit}>
-
       <Input
         name="project_name"
         type="text"
@@ -108,7 +91,6 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         text="Orçamento"
         handleOnChange={handleChange}
         value={project.project_budget}
-        
       />
 
       <Select
@@ -116,9 +98,9 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         name="select_category"
         options={categories}
         handleOnChange={handleCategory}
-        value={project.category ? project.category.id : ''}        
+        value={project.category ? project.category.id : ""}
       />
-      
+
       <SubmitButton text={btnText} />
     </form>
   );

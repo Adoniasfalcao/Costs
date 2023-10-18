@@ -1,8 +1,8 @@
-function MaskValue(texto){
-    texto = texto.replace(/D/, '')
-    texto = texto.replace(/(\D)(\D)(\D)(\D)/g, '$$1.$2$3$4.00)')
+function MaskValue(texto) {
+  texto = texto.replace(/D/, "");
+  texto = texto.replace(/(\D)(\D)(\D)(\D)/g, "$$1.$2$3$4.00)");
 
-    return texto
+  return texto;
 }
 
-export default MaskValue
+export default MaskValue;

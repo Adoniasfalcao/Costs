@@ -1,9 +1,7 @@
-import styles from './SubmitButton.module.css'
+import styles from "./SubmitButton.module.css";
 
-function SubmitButton ({ text }) {
-    return(
-        <button className={styles.SubmitButton}>{ text }</button>
-    )
+function SubmitButton({ text }) {
+  return <button className={styles.SubmitButton}>{text}</button>;
 }
 
-export default SubmitButton 
+export default SubmitButton;
