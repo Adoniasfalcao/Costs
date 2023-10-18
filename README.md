@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Costs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). \
+Modelo de exibição hospedado com Firebase Hosting: https://costs-82f17.web.app/
 
 ## Available Scripts
 
